@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МебельДиванов - Магазин мягкой мебели</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🛋️ МебельДиванов</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#products">Товары</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Баннер -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Комфортная мебель для вашего дома</h1>
+            <p>Качественные диваны и кресла по лучшим ценам</p>
+            <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView()">Смотреть каталог</button>
+        </div>
+    </section>
+
+    <!-- Каталог товаров -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Наши товары</h2>
+            <div class="products-grid">
+                <!-- Диван 1 -->
+                <div class="product-card">
+                    <div class="product-image">🛋️</div>
+                    <h3>Диван Комфорт</h3>
+                    <p class="description">Мягкий двухместный диван с высокой спинкой</p>
+                    <p class="price">от 15,000₽</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Диван Комфорт')">Добавить в корзину</button>
+                </div>
+
+                <!-- Диван 2 -->
+                <div class="product-card">
+                    <div class="product-image">🛋️</div>
+                    <h3>Диван Люкс</h3>
+                    <p class="description">Премиум диван с кожаной обивкой</p>
+                    <p class="price">от 28,000₽</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Диван Люкс')">Добавить в корзину</button>
+                </div>
+
+                <!-- Диван 3 -->
+                <div class="product-card">
+                    <div class="product-image">🛋️</div>
+                    <h3>Диван Модерн</h3>
+                    <p class="description">Стильный угловой диван для просторных комнат</p>
+                    <p class="price">от 22,000₽</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Диван Модерн')">Добавить в корзину</button>
+                </div>
+
+                <!-- Кресло 1 -->
+                <div class="product-card">
+                    <div class="product-image">🪑</div>
+                    <h3>Кресло Релакс</h3>
+                    <p class="description">Удобное кресло с механизмом качания</p>
+                    <p class="price">от 8,000₽</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Кресло Релакс')">Добавить в корзину</button>
+                </div>
+
+                <!-- Кресло 2 -->
+                <div class="product-card">
+                    <div class="product-image">🪑</div>
+                    <h3>Кресло Элит</h3>
+                    <p class="description">Офисное кресло с ортопедической спинкой</p>
+                    <p class="price">от 12,000₽</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Кресло Элит')">Добавить в корзину</button>
+                </div>
+
+                <!-- Пуф -->
+                <div class="product-card">
+                    <div class="product-image">📦</div>
+                    <h3>Пуф Мягкий</h3>
+                    <p class="description">Компактный пуф для ног или сидения</p>
+                    <p class="price">от 5,000₽</p>
+                    <button class="btn btn-secondary" onclick="addToCart('Пуф Мягкий')">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О магазине</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>МебельДиванов - это надежный магазин мягкой мебели с опытом более 10 лет. Мы предлагаем:</p>
+                    <ul class="features">
+                        <li>✓ Качественные материалы и прочная конструкция</li>
+                        <li>✓ Доступные цены и регулярные скидки</li>
+                        <li>✓ Бесплатная доставка по городу</li>
+                        <li>✓ Гарантия на все товары</li>
+                        <li>✓ Профессиональная консультация</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📞 Телефон</h3>
+                    <p>+7 (999) 123-45-67</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>info@mebel-divanov.ru</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Адрес</h3>
+                    <p>ул. Мебельная, д. 10, Москва</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🕐 Время работы</h3>
+                    <p>10:00 - 20:00 (Пн-Вс)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Корзина -->
+    <div id="cart-notification" class="cart-notification"></div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 МебельДиванов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
